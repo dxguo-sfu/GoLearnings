@@ -1,3 +1,5 @@
+// Continue the Go tour from here: https://tour.golang.org/flowcontrol/1
+
 // The package name of this file
 package main
 
