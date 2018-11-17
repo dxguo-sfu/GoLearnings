@@ -1,4 +1,4 @@
-package main
+package basics
 
 import (
 	"fmt"
@@ -6,19 +6,19 @@ import (
 	"strings"
 )
 
-func main() {
-	a := Point{x: 1, y: 2}
-	b := Point{3, 4.5}
-	c := NewPoint(5, 6)
+// func main() {
+// 	a := Point{x: 1, y: 2}
+// 	b := Point{3, 4.5}
+// 	c := NewPoint(5, 6)
 
-	fmt.Println(a)
-	fmt.Println(b)
-	fmt.Println(c)
+// 	fmt.Println(a)
+// 	fmt.Println(b)
+// 	fmt.Println(c)
 
-	fmt.Println(a.Norm())
-	fmt.Println(b.Norm())
-	fmt.Println(c.Norm())
-}
+// 	fmt.Println(a.Norm())
+// 	fmt.Println(b.Norm())
+// 	fmt.Println(c.Norm())
+// }
 
 // Point is a pointer struct with an x and y coordinate
 type Point struct {

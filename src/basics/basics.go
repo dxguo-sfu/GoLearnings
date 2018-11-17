@@ -1,37 +1,34 @@
 // Continue the Go tour from here: https://tour.golang.org/flowcontrol/1
 
 // The package name of this file
-package main
+// package main
+package basics
 
 // By convention, the package name is the same as the last element of the import path
 // "factored" import statement below, could also put them on multiple "import x" lines
-import (
-	"fmt"
-	"math"
-)
 
-func main() {
-	var a = "hello"    // Type is inferred from the right side
-	b := "world"       // Declare and initialize with :=
-	var c, d string    // Only declare, uninitialized vars will hold 0 value ie. ""
-	numA, numB := 5, 6 // Standard naming convention: camelCase
+// func main() {
+// 	var a = "hello"    // Type is inferred from the right side
+// 	b := "world"       // Declare and initialize with :=
+// 	var c, d string    // Only declare, uninitialized vars will hold 0 value ie. ""
+// 	numA, numB := 5, 6 // Standard naming convention: camelCase
 
-	// A name is exported if it begins with a capital letter, math.pi will NOT work
-	fmt.Println("Math.Pi = ", math.Pi)
+// 	// A name is exported if it begins with a capital letter, math.pi will NOT work
+// 	fmt.Println("Math.Pi = ", math.Pi)
 
-	// Calling a function and using sprintf
-	fmt.Println(fmt.Sprintf("add %d %d = %d", numA, numB, add(numA, numB)))
+// 	// Calling a function and using sprintf
+// 	fmt.Println(fmt.Sprintf("add %d %d = %d", numA, numB, add(numA, numB)))
 
-	// Return tuple
-	c, d = Swap(a, b)
-	fmt.Printf("Swap `%s` and `%s`: `%s` `%s`\n", a, b, c, d)
+// 	// Return tuple
+// 	c, d = Swap(a, b)
+// 	fmt.Printf("Swap `%s` and `%s`: `%s` `%s`\n", a, b, c, d)
 
-	numC, numD := split(17)
-	fmt.Printf("Split 17 into %d and %d\n", numC, numD)
+// 	numC, numD := split(17)
+// 	fmt.Printf("Split 17 into %d and %d\n", numC, numD)
 
-	// Type conversion, printing types
-	fmt.Printf("Type of numA: %T\tNow converted: %T\n", numA, float32(numA))
-}
+// 	// Type conversion, printing types
+// 	fmt.Printf("Type of numA: %T\tNow converted: %T\n", numA, float32(numA))
+// }
 
 // (x, y int) : only the last param needs to be type defined if they share the same type
 func add(x, y int) int {
