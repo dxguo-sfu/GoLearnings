@@ -60,8 +60,8 @@ $HOME/go is the default GOPATH
 */
 
 /*	Imports and Packages
-	A package is module that can be imported.
-	A Go files under the same folder must be part of the same package
+	A package is a module that can be imported.
+	All Go files under the same folder must be part of the same package
 	Therefore, go filenames do not need to be the same as the package name
 */
 
